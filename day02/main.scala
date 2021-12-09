@@ -3,7 +3,7 @@ object Main{
   def main(args: Array[String]): Unit = {
     var x: Int = 0;
     var y: Int = 0;
-    var lines = Source.fromFile("input.txt").getLines.toList
+    var lines = Source.fromFile("input.txt").getLines().toList
     lines.iterator.foreach((item: String) => {
       val parsed = item.split(" ")
       if(parsed(0) == "up") y -= parsed(1).toInt
